@@ -17,8 +17,8 @@ suite('example View', () => {
 	test('validate that we have some children', async () => {
 		if (integrationExplorer) {
 			let kids : any = integrationExplorer.getChildren();
-			expect(kids).instanceOf(TreeItem);
-			expect(kids.children().length()).equals(2);
+			expect(kids).instanceOf(Array);
+			expect(kids.length).equals(1);
 		}
 	});
 });

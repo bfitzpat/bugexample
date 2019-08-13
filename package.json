@@ -32,6 +32,9 @@
         "postinstall": "node ./node_modules/vscode/bin/install",
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
+    "extensionDependencies": [
+        "ms-kubernetes-tools.vscode-kubernetes-tools"
+    ],
     "devDependencies": {
         "@types/chai": "^4.1.7",
         "@types/mocha": "^2.2.32",
